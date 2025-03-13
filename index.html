@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electronics Store - Your Ultimate Gadget Destination</title>
+
+  <!-- Materialize CSS CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  
+  <style>
+    /* Custom styles */
+    body {
+      background: url('bg image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .hero-section {
+      background: rgba(0, 0, 0, 0.5);
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 0;
+    }
+    .hero-section h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .hero-section p {
+      font-size: 1.5rem;
+    }
+    .product-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-card .card-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .footer-section {
+      background-color: #263238;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .footer-section a {
+      color: #f9a825;
+      text-decoration: none;
+    }
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+    .main-page{
+     background-image: "bg image.jpg";
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="blue darken-3">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">THE CYBER TECH</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>Welcome to the Future of Technology</h1>
+    <p>Your one-stop shop for all the latest gadgets and electronics!</p>
+    <a href="#products" class="btn-large waves-effect waves-light yellow">Shop Now</a>
+  </section>
+<div class="main-page">
+  <!-- Featured Products Section -->
+  <div id="products" class="container">
+    <h3 class="center">Featured Products</h3>
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col s12 m6 l4">
+        <div class="card product-card">
+          <div class="card-image">
+            <img src="https://th.bing.com/th/id/OIP.L_IBmQ5JmWqU-k1Ezm9DjgHaFj?w=216&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Smartphone">
+            <span class="card-title">Smartphone</span>
+          </div>
+          <div class="card-content">
+            <p>Latest model with stunning features and performance. Ideal for work, play, and everything in between.</p>
+          </div>
+          <div class="card-action">
+            <span class="price">$699.99</span>
+            <a href="#" class="btn waves-effect waves-light green">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col s12 m6 l4">
+        <div class="card product-card">
+          <div class="card-image">
+            <img src="https://th.bing.com/th/id/OIP.WPeD5mA0y4bipUW8s_zsmwHaFy?w=222&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Laptop">
+            
+            <span class="card-title">Laptop</span>
+          </div>
+          <div class="card-content">
+            <p>High-performance laptop for all your computing needs, including work and gaming.</p>
+          </div>
+          <div class="card-action">
+            <span class="price">$1,199.99</span>
+            <a href="#" class="btn waves-effect waves-light green">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col s12 m6 l4">
+        <div class="card product-card">
+          <div class="card-image">
+            <img src="https://th.bing.com/th/id/OIP.daYqXVK4ketb9pMC-CG7KQHaEn?w=273&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Headphones">
+            <span class="card-title">Headphones</span>
+          </div>
+          <div class="card-content">
+            <p>Noise-cancelling headphones with premium sound quality, perfect for music lovers.</p>
+          </div>
+          <div class="card-action">
+            <span class="price">$129.99</span>
+            <a href="#" class="btn waves-effect waves-light green">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col s12 m6 l4">
+        <div class="card product-card">
+          <div class="card-image">
+            <img src="https://th.bing.com/th/id/OIP.-8c0xY54fblu7uCnTuj2uAHaHa?w=179&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Smartwatch">
+            <span class="card-title">Smartwatch</span>
+          </div>
+          <div class="card-content">
+            <p>Track your fitness goals and stay connected with the latest smartwatch model.</p>
+          </div>
+          <div class="card-action">
+            <span class="price">$199.99</span>
+            <a href="#" class="btn waves-effect waves-light green">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <p>&copy; 2025 The Cyber Tech. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+  </footer>
+
+  <!-- Materialize JS and dependencies -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
