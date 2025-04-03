@@ -104,6 +104,65 @@ https://hub.docker.com/r/kavita493/mywebsite
   ```
 - **Dependencies:** Verify that Docker and Docker Compose are installed and running correctly on your system.
 
+# SIT737-2025-Prac2P: Microservice Deployment on GCP
+
+## Project Overview
+This project demonstrates the deployment of a microservice on Google Cloud Platform (GCP) using Docker and Google Artifact Registry. The microservice is built with Node.js and deployed in a containerized environment.
+
+## Prerequisites
+Ensure you have the following installed and configured:
+- [Google Cloud SDK](https://cloud.google.com/sdk/docs/install)
+- [Docker](https://www.docker.com/get-started)
+- A Google Cloud Platform (GCP) project with billing enabled
+- Authentication set up for Docker to push images to Google Artifact Registry
+
+## Setup and Configuration
+
+### 1. Initialize Google Cloud CLI
+```sh
+ gcloud init
+```
+Select the appropriate account and project.
+
+### 2. Configure Docker Authentication for Google Artifact Registry
+```sh
+gcloud auth configure-docker australia-southeast1-docker.pkg.dev
+```
+
+### 3. Clone the Repository
+```sh
+git clone <repository-url>
+cd sit737-2025-prac2p
+```
+
+### 4. Build the Docker Image
+```sh
+docker build -t mywebsite .
+```
+
+### 5. Tag the Image for Google Artifact Registry
+```sh
+docker tag mywebsite australia-southeast1-docker.pkg.dev/sit737-25t1-kavita-1a24f01/sit737-2025-prac5d/my-microservice:latest
+```
+
+### 6. Push the Image to Google Artifact Registry
+```sh
+docker push australia-southeast1-docker.pkg.dev/sit737-25t1-kavita-1a24f01/sit737-2025-prac5d/my-microservice:latest
+```
+## Running the Docker Container
+
+By using docker run command we can check that it can boot your microservice from the published image:
+
+```bash
+docker run -d -p 8081:3000 gcr.io/sit737-25t1-kavita-1a24f01/mywebsite:latest
 
 
-Happy Containerizing!
+
+
+
+
+
+
+
+
+
