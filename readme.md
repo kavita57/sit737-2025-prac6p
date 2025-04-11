@@ -1,7 +1,7 @@
 
 # The Cyber Tech 
 
-Welcome to **The Cyber Tech**, a modern web application built for an electronics store that showcases gadgets, devices, and tech accessories. This sleek app allows users to browse through products and experience a simple cart interface — all powered by Node.js and Express.js.
+Welcome to **The Cyber Tech**, a modern web application built for an electronics store that showcases gadgets, devices, and tech accessories. This sleek app allows users to browse through products and experience a simple cart interface , all powered by Node.js and Express.js.
 
 
 ##  Project Overview
