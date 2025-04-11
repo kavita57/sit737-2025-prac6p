@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: the-cyber-tech-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: the-cyber-tech
+  template:
+    metadata:
+      labels:
+        app: the-cyber-tech
+    spec:
+      containers:
+      - name: the-cyber-tech
+        image: kavita493/the-cyber-tech1:latest  
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000
+
+
